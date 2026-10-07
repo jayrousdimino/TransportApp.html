@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ride with Me - Transportation App</title>
+</head>
+<body id="top">
+
+<header>
+<h1>Ride with Me </h1>
+<p><em>Your Reliable City Transportation Partner</em></p>
+<nav>
+<a href="#book">Book a Ride</a> |
+<a href="#fleet">Our Vehicles</a> |
+<a href="#map">Map</a> |
+<a href="#media">Media</a> |
+<a href="#schedule">Schedule</a> |
+<a href="#contact">Contact</a>
+</nav>
+<hr>
+</header>
+
+<main>
+
+<section id="book">
+<h2>Book a Ride</h2>
+<form action="#" method="post">
+<fieldset>
+<legend>Trip Details</legend>
+
+<p>
+<label for="fullname">Full name:</label><br>
+<input type="text" id="fullname" name="fullname" placeholder="Juan Dela Cruz" required>
+</p>
+
+<p>
+<label for="phone">Phone number:</label><br>
+<input type="tel" id="phone" name="phone" placeholder="09XX XXX XXXX" required>
+</p>
+
+<p>
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" placeholder="you@example.com">
+</p>
+
+<p>
+<label for="pickup">Pick-up location:</label><br>
+<input type="text" id="pickup" name="pickup" list="places">
+</p>
+
+<p>
+<label for="dropoff">Drop-off location:</label><br>
+<input type="text" id="dropoff" name="dropoff" list="places">
+</p>
+
+<datalist id="places">
+<option value="Central Terminal"></option>
+<option value="City Hall"></option>
+<option value="Airport"></option>
+<option value="University Campus"></option>
+<option value="Public Market"></option>
+</datalist>
+
+<p>
+<label for="trip-date">Date:</label>
+<input type="date" id="trip-date" name="trip-date" required>
+
+<label for="trip-time">Time:</label>
+<input type="time" id="trip-time" name="trip-time" required>
+</p>
+
+<p>
+<label for="passengers">Passengers (1-10):</label>
+<input type="number" id="passengers" name="passengers" min="1" max="10" value="1">
+</p>
+
+<p>
+<label for="vehicle">Vehicle type:</label>
+<select id="vehicle" name="vehicle">
+<option value="Taxi">Taxi</option>
+<option value="Van">Van</option>
+<option value="Battle Bus">Battle Bus</option>
+<option value="Motorcycle Taxi">Motorcycle Taxi</option>
+<option value="Tricycle">Tricycle</option>
+</select>
+</p>
+
+<p>
+<label>Payment method:</label><br>
+<input type="radio" id="cash" name="payment" value="Cash" checked>
+<label for="cash">Cash</label>
+<input type="radio" id="card" name="payment" value="Card">
+<label for="card">Card</label>
+<input type="radio" id="ewallet" name="payment" value="E-Wallet">
+<label for="ewallet">E-Wallet</label>
+</p>
+
+<p>
+<label>Extras:</label><br>
+<input type="checkbox" id="luggage" name="extras" value="Extra luggage">
+<label for="luggage">Extra luggage</label><br>
+<input type="checkbox" id="childseat" name="extras" value="Child seat">
+<label for="childseat">Child seat</label><br>
+<input type="checkbox" id="wheelchair" name="extras" value="Wheelchair accessible">
+<label for="wheelchair">Wheelchair accessible</label>
+</p>
+
+<p>
+<label for="notes">Notes for the driver:</label><br>
+<textarea id="notes" name="notes" rows="4" cols="40" placeholder="Landmarks, special instructions..."></textarea>
+</p>
+
+<p>
+<input type="checkbox" id="terms" name="terms" required>
+<label for="terms">I agree to the <a href="#terms-info">Terms & Conditions</a></label>
+</p>
+
+<p>
+<button type="submit">Book Now</button>
+<button type="reset">Clear</button>
+</p>
+</fieldset>
+</form>
+<hr>
+</section>
+
+
+<section id="fleet">
+<h2>Our Vehicles</h2>
+
+<figure>
+<img src="taxi.jpg" alt="A Tuff taxi" width="400" height="250">
+<figcaption><strong>Taxi</strong> — Fast and Tuff taxi for up to 4 passengers.</figcaption>
+</figure>
+
+<figure>
+<img src="van2.jpg" alt="A Highway to hell van" width="400" height="250">
+<figcaption><strong>Van</strong> — Ideal for families and groups of up to 10.</figcaption>
+</figure>
+
+<figure>
+<img src="bus.jpg" alt="A Battle bus" width="400" height="250">
+<figcaption><strong>Battle Bus</strong> — Ready for battle transportation,guaranteed chicken dinner.</figcaption>
+</figure>
+
+<figure>
+    <img src="motor.jpg" alt="A Highway to hell van" width="400" height="250">
+    <figcaption><strong>Motorcycle</strong> — Good for one and ready to die.</figcaption>
+    </figure>
+
+    <figure>
+    <img src="trici.jpg" alt="A Highway to hell van" width="400" height="250">
+    <figcaption><strong>Motorcycle taxi </strong> — Good for 3 lezgoo beyybii.</figcaption>
+    </figure>
+<hr>
+</section>
+
+
+<section id="schedule">
+    <h2>Battle Bus Schedule</h2>
+    
+    <table border="1" cellpadding="6" cellspacing="0">
+    <caption>Daily departures from Central Terminal</caption>
+    <thead>
+    <tr>
+    <th>Route</th>
+    <th>Departure</th>
+    <th>Arrival</th>
+    <th>Fare</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Terminal → City Hall</td>
+    <td>6:00 AM</td>
+    <td>6:30 AM</td>
+    <td>₱30</td>
+    </tr>
+    <tr>
+    <td>Terminal → University</td>
+    <td>7:00 AM</td>
+    <td>7:40 AM</td>
+    <td>₱45</td>
+    </tr>
+    <tr>
+    <td>Terminal → Airport</td>
+    <td>9:00 AM</td>
+    <td>10:00 AM</td>
+    <td>₱120</td>
+    </tr>
+    <tr>
+    <td>Terminal → Public Market</td>
+    <td>1:00 PM</td>
+    <td>1:25 PM</td>
+    <td>₱25</td>
+    </tr>
+    </tbody>
+    </table>
+    
+    <h3>Check Your Route</h3>
+    <form action="#" method="get">
+    <p>
+    <label for="route-select">Choose a route:</label>
+    <select id="route-select" name="route">
+    <option value="Terminal - City Hall">Terminal → City Hall</option>
+    <option value="Terminal - University">Terminal → University</option>
+    <option value="Terminal - Airport">Terminal → Airport</option>
+    <option value="Terminal - Public Market">Terminal → Public Market</option>
+    </select>
+    <button type="submit">Search</button>
+    </p>
+    </form>
+    <hr>
+    </section>
+
+
+<section id="media">
+    <h2>Media</h2>
+    
+    <h3>How Ride with Me Works (Video)</h3>
+    <video width="480" controls poster="banana.jpg">
+    <source src="Relaxing Car Drive.mp4" type="video/mp4">
+    
+    
+    </video>
+    
+    <h3>Driver Announcement (Audio)</h3>
+    <audio controls>
+    <source src="Chug Jug With You.mp3" type="audio/mpeg">
+   
+    <h3>Watch on YouTube</h3>
+
+    <iframe
+        width="480"
+        height="270"
+        src="https://www.youtube.com/embed/GMgsFZ4rkEI"
+        title="Ride with Me YouTube Video"
+        allowfullscreen>
+    </iframe>
+    
+    <hr>
+    </section>
+    
+
+
+
+<section id="contact">
+<h2>Contact & Feedback</h2>
+
+<form action="#" method="post" enctype="multipart/form-data">
+<fieldset>
+<legend>Send Feedback</legend>
+
+<p>
+<label for="fb-name">Your name:</label><br>
+<input type="text" id="fb-name" name="fb-name" required>
+</p>
+
+<p>
+<label for="rating">Rate your ride (1-5):</label><br>
+<input type="range" id="rating" name="rating" min="1" max="5" value="5">
+</p>
+
+<p>
+<label for="topic">Topic:</label><br>
+<select id="topic" name="topic">
+<option value="Compliment">Compliment</option>
+<option value="Complaint">Complaint</option>
+<option value="Lost item">Lost item</option>
+<option value="Suggestion">Suggestion</option>
+</select>
+</p>
+
+<p>
+<label for="message">Message:</label><br>
+<textarea id="message" name="message" rows="5" cols="40" required></textarea>
+</p>
+
+<p>
+<label for="photo">Attach a photo (optional):</label><br>
+<input type="file" id="photo" name="photo" accept="image/*">
+</p>
+
+<p>
+<button type="submit">Send Feedback</button>
+</p>
+</fieldset>
+</form>
+
+<h3>Reach Us</h3>
+<address>
+<strong>Ride with Me Transport Co.</strong><br>
+123 Central Avenue, Manila, Philippines<br>
+Phone: <a href="tel:+639171234567">+63 917 123 4567</a><br>
+Email: <a href="mailto:support@RidewithMe.example">support@RidewithMe.example</a>
+</address>
+<hr>
+</section>
+
+
+<section id="links">
+<h2>Useful Links</h2>
+<ul>
+<li><a href="https://www.openstreetmap.org" target="_blank" rel="noopener">OpenStreetMap</a></li>
+<li><a href="https://maps.google.com" target="_blank" rel="noopener">Google Maps</a></li>
+<li><a href="https://facebook.com" target="_blank" rel="noopener">Our Facebook Page</a></li>
+<li><a href="#top">Back to top</a></li>
+</ul>
+</section>
+
+<section id="terms-info">
+<h2>Terms & Conditions</h2>
+<details>
+<summary>READ THE TERMS</summary>
+<ol>
+<li>Passengers must arrive at least 5 minutes before scheduled departure time.</li>
+<li>No smoking or eating allowed inside the vehicles.</li>
+<li>Ride with Me is not responsible for items left behind after a trip.</li>
+</ol>
+</details>
+</section>
+</main>
+
+<footer>
+<hr>
+<p>© 2026 Ride with Me Transport Co. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
